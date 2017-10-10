@@ -82,11 +82,11 @@ def build_pdf(name)
 end
 
 # === Tasks ===============================
-task :default => "tasseff-cv.pdf"
+task :default => "riley-cv.pdf"
 
 # --- CV targets --------------------------
-task "tasseff-cv.pdf" do
-  build_pdf("tasseff-cv")
+task "riley-cv.pdf" do
+  build_pdf("riley-cv")
 end
 
 # --- Generate html for bibliography ----------
@@ -103,11 +103,11 @@ end
 # --- Upload to webpage -----------------------
 task :upload => :default do
   # Locations in the web repo
-  cv   = "cv/tasseff-cv.pdf"
+  cv   = "cv/riley-cv.pdf"
   html = "_includes/bibliography.html"
 
   cp "bibliographies/bibliography.html", File.expand_path("#{web_repo}/#{html}")
-  cp "tasseff-cv.pdf", File.expand_path("#{web_repo}/#{cv}")
+  cp "riley-cv.pdf", File.expand_path("#{web_repo}/#{cv}")
 
   #Dir.chdir("#{web_repo}") do
   #  system("git add #{cv}")
@@ -119,7 +119,7 @@ end
 
 # --- Cleanup -----------------------------
 task :clean do
-  files = ["tasseff-cv.pdf"]
+  files = ["riley-cv.pdf"]
   files.unshift Dir.glob(%w(*.aux *.bbl *.blg *.log *.out *synctex.gz*))
 	FileUtils.rm_f(files)
 end
