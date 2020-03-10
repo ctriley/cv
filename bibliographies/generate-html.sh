@@ -3,7 +3,7 @@
 export BSTINPUTS=bib2xhtml:$BSTINPUTS
 tmpfile="tmp.html" # name of temporary file to use
 outfile="bibliography.html" # name of final bibliography output file
-name="Byron Tasseff" # name to highlight in the output
+name="Connor Riley" # name to highlight in the output
 
 rm $outfile # Clean things up a bit first.
 touch $outfile
