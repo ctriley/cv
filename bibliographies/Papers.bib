@@ -1,34 +1,61 @@
-@misc{auad2021resiliency,
-      title={Resiliency of On-Demand Multimodal Transit Systems During a Pandemic}, 
-      author={Ramon Auad and Kevin Dalmeijer and Connor Riley and Tejas Santanam and Anthony Trasatti and Pascal Van Hentenryck and Hanyu Zhang},
-      year={2021},
-      eprint={2101.05395},
-      archivePrefix={arXiv},
-      primaryClass={math.OC}
+@article{vanhentenryck2023reach,
+  title={MARTA Reach: Pilot of an On-Demand Multimodal Transit System in Atlanta},
+  author={Van Hentenryck, Pascal and Riley, Connor and Trasatti, Anthony and Guan, Hongzhao and Santanam, Tejas and Huertas, Jorge A. and Baskin, Samson},
+  journal={In preparation},
+  year={2023}
 }
 
-@inproceedings{ijcai2020-609,
+@phdthesis{riley2022operating,
+  title={Operating On-Demand Ride-Sharing Services},
+  author={Riley, Connor},
+  year={2022},
+  school={Georgia Institute of Technology}
+}
+
+@misc{santanam2023changes,
+      title={Changes in Commuter Behavior from COVID-19 Lockdowns in the Atlanta Metropolitan Area}, 
+      author={Tejas Santanam and Anthony Trasatti and Hanyu Zhang and Connor Riley and Pascal Van Hentenryck and Ramayya Krishnan},
+      year={2023},
+      eprint={2302.13512},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{AUAD2021103418,
+	abstract = {During the COVID-19 pandemic, the collapse of the public transit ridership led to significant budget deficits due to dramatic decreases in fare revenues. Additionally, public transit agencies are facing challenges of reduced vehicle capacity due to social distancing requirements, additional costs of cleaning and protective equipment, and increased downtime for vehicle cleaning. Due to these constraints on resources and budgets, many transit agencies have adopted essential service plans with reduced service hours, number of routes, or frequencies. This paper studies the resiliency during a pandemic of On-Demand Multimodal Transit Systems (ODMTS), a new generation of transit systems that combine a network of high-frequency trains and buses with on-demand shuttles to serve the first and last miles and act as feeders to the fixed network. It presents a case study for the city of Atlanta and evaluates ODMTS for multiple scenarios of depressed demand and social distancing representing various stages of the pandemic. The case study relies on an optimization pipeline that provides an end-to-end ODMTS solution by bringing together methods for demand estimation, network design, fleet sizing, and real-time dispatching. These methods are adapted to work in a multimodal setting and to satisfy practical constraints. In particular, a limit is imposed on the number of passenger transfers, and a new network design model is introduced to avoid the computational burden stemming from this constraint. Real data from the Metropolitan Atlanta Rapid Transit Authority (MARTA) is used to conduct the case study, and the results are evaluated with a high-fidelity simulation. The case study demonstrates how ODMTS provide a resilient solution in terms of cost, convenience, and accessibility for this wide range of scenarios.},
+	author = {Ramon Auad and Kevin Dalmeijer and Connor Riley and Tejas Santanam and Anthony Trasatti and Pascal {Van Hentenryck} and Hanyu Zhang},
+	doi = {https://doi.org/10.1016/j.trc.2021.103418},
+	issn = {0968-090X},
+	journal = {Transportation Research Part C: Emerging Technologies},
+	keywords = {COVID-19, Public transit, On-demand shuttles, Multimodal transit systems},
+	pages = {103418},
+	title = {Resiliency of on-demand multimodal transit systems during a pandemic},
+	url = {https://www.sciencedirect.com/science/article/pii/S0968090X21004125},
+	volume = {133},
+	year = {2021},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/S0968090X21004125},
+	bdsk-url-2 = {https://doi.org/10.1016/j.trc.2021.103418}}
+
+@inproceedings{riley2020,
   title     = {Real-Time Dispatching of Large-Scale Ride-Sharing Systems: Integrating Optimization, Machine Learning, and Model Predictive Control},
   author    = {Riley, Connor and van Hentenryck, Pascal and Yuan, Enpeng},
   booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
                Artificial Intelligence, {IJCAI-20}},
   publisher = {International Joint Conferences on Artificial Intelligence Organization},             
-  editor    = {Christian Bessiere}	
+  editor    = {Christian Bessiere},	
   pages     = {4417--4423},
   year      = {2020},
-  month     = {7},
-  note      = {Special track on AI for CompSust and Human well-being}
+  note      = {Special track on AI for CompSust and Human well-being},
   doi       = {10.24963/ijcai.2020/609},
   url       = {https://doi.org/10.24963/ijcai.2020/609},
 }
-
 
 @article{CHEN2020106700,
 	Abstract = {Maintaining an aging network is a challenge for many water utilities due to limited budgets and uncertainty surrounding the physical condition of buried pipeline assets. The deployment of robotic inspections provides high quality data, but these platforms have limited use due to cost and operational constraints. To facilitate cost-efficient inspections, operators need to identify high-risk assets while accounting for the effectiveness of the tools at hand. This paper addresses inspection planning with the goal of finding an optimal route while considering tool limitations. An exact integer programming formulation is presented where only three factors are used to characterize tool constraints. Two classes of solution methods are explored: 1) tree based searches, and 2) integer programming. This paper demonstrates how each method can be used to identify optimal paths within a real water distribution system. Empirical trials suggest that tree-based search methods are the most efficient when the path limit is short, but do not scale well when the path length increases. In contrast, integer-programming methods are more effective for longer path lengths but have scalability issues for large network sizes. Data preprocessing, where the input network size is reduced, can provide large computation time reductions while returning near-optimal solutions.},
 	Author = {Thomas Ying-Jeh Chen and Connor Thomas Riley and Pascal Van Hentenryck and Seth David Guikema},
 	Doi = {https://doi.org/10.1016/j.ress.2019.106700},
 	Issn = {0951-8320},
-	Journal = {Reliability Engineering & System Safety},
+	Journal = {Reliability Engineering \& System Safety},
 	Keywords = {Decision support systems, Risk analysis, Routing, Drinking water distribution systems, Asset management},
 	Pages = {106700},
 	Title = {Optimizing inspection routes in pipeline networks},
@@ -53,8 +80,6 @@ pages="472--487",
 abstract="This paper considers real-time dispatching for large-scale ride-sharing services over a rolling horizon. It presents RTDARS which relies on a column-generation algorithm to minimize wait times while guaranteeing short travel times and service for each customer. Experiments using historic taxi trips in New York City for instances with up to 30,000 requests per hour indicate that the algorithm scales well and provides a principled and effective way to support large-scale ride-sharing services in dense cities.",
 isbn="978-3-030-19212-9"
 }
-
-
 
 @InProceedings{pratt_et_al:LIPIcs:2016:5961,
   author =	{Kevin Pratt and Connor Riley and Donald Sheehy},

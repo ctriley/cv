@@ -2,7 +2,7 @@
 require 'set'
 
 # Location of webpage repo and relevant files in it.
-web_repo = '~/Web/tasseff.com'
+web_repo = '~/Web/ctriley.github.io'
 
 # Recursively get all dependences of a tex file, return them as a set of file names.
 def get_deps(texfile, deps = Set.new([texfile]))
